@@ -139,11 +139,11 @@ def detect_imgs(filenames, cfg="cfg/yolo.cfg", weights="yolo.weights", data="cfg
     net = load_net(cfg, weights, 0)
     meta = load_meta(data)
     rs = []
-    for filename in filenames:
+    for i, filename in enumerate(filenames):
         start=time.time()
         r = detect(net, meta, filename, thresh=thresh, hier_thresh=hier_thresh, nms=nms)
         end=time.time()
-        #print 'detection time:{:.4f}'.format(end-start)
+        print '({}/{})detection time:{:.4f}'.format(i+1, len(filenames), end-start)
         rs.append(r)
     return rs
 

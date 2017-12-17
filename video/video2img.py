@@ -2,6 +2,9 @@ import cv2
 import os, sys, getopt
 import glob
 
+def usage():
+    print 'python video2img.py -i <video file>'
+
 def main():
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hi:v", ["help", "input="])
