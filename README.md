@@ -14,10 +14,10 @@ This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) 
 
 1. `make` the project;
 1. Download `yolo.weights` and `tiny-yolo.weights` by running `wget https://pjreddie.com/media/files/yolo.weights` and `wget https://pjreddie.com/media/files/tiny-yolo-voc.weights`;
-1. Copy a video file to video folder;
-1. In video folder, run `video.py`;
-1. In video folder, run `get_pkllist.py`;
-1. Run `yolo_seqnms.py`;
+1. Copy a video file to video folder, for example, `input.mp4`;
+1. In the video folder, run `python video2img.py -i input.mp4` and then `python get_pkllist.py`;
+1. Return to root floder and run `python yolo_seqnms.py` to generate output images in `video/output`;
+1. If you want to reconstruct a video from these output images, you can go to the video folder and run `python img2video.py -i output`
 
 And you will sse detection results in `video/output`
 
