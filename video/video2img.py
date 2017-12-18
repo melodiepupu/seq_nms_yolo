@@ -32,9 +32,10 @@ def main():
     vidcap = cv2.VideoCapture(file_name)
     success,image = vidcap.read()
     count = 0
-    success = True
-    while success:
+    while True:
       success,image = vidcap.read()
+      if not success:
+          break
       print 'Read a new frame: {}'.format(count)
       cv2.imwrite(os.path.join('input', 'frame{}.jpg'.format(count)), image)     # save frame as JPEG file
       count += 1
