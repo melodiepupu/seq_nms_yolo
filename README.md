@@ -1,6 +1,6 @@
 # Seq_nms_YOLO
 
-#### Membres: Yutong YAN, Sixiang XU, Heng ZHANG
+#### Membres: Yunyun SUN, Yutong YAN, Sixiang XU, Heng ZHANG
 
 ---
 
