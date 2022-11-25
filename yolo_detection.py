@@ -2,6 +2,7 @@ from ctypes import *
 import math
 import random
 import time
+import os
 
 def sample(probs):
     s = sum(probs)
@@ -34,7 +35,8 @@ class METADATA(Structure):
     _fields_ = [("classes", c_int),
                 ("names", POINTER(c_char_p))]
 
-lib = CDLL("libdarknet.so", RTLD_GLOBAL)
+#lib = CDLL("libdarknet.so", RTLD_GLOBAL)
+lib = CDLL(os.path.join(os.getcwd(), "libdarknet.so"), RTLD_GLOBAL)
 lib.network_width.argtypes = [c_void_p]
 lib.network_width.restype = c_int
 lib.network_height.argtypes = [c_void_p]
