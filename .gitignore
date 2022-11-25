@@ -1,0 +1,16 @@
+# Data #
+###################
+video/*.avi
+tiny-yolo.weights
+yolo.weights
+video/input/*
+video/pkllist.txt
+
+__pycache__/*
+.idea/
+
+# Generated from Makefile
+libdarknet.a
+libdarknet.so
+
+darknet
