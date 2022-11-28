@@ -1,7 +1,7 @@
 # Seq_nms_YOLO
 
 #### Membres: Yunyun SUN, Yutong YAN, Sixiang XU, Heng ZHANG
-#### Modified by: [David García de la Horra](https://github.com/Axolopl) and [Fangfang Zhu-Zhou](https://github.com/FangfangZhuZhou)
+#### Modified by: [David García de la Horra](https://github.com/DavidGarcíadelaHorra) and [Fangfang Zhu-Zhou](https://github.com/FangfangZhuZhou)
 
 ## Introduction
 
