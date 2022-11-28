@@ -123,4 +123,3 @@ dependencies:
   - zstd=1.4.9=haebb681_0
   - pip:
     - opencv-python==4.2.0.32
-prefix: /home/matlab/anaconda3/envs/DLVSP_PR2
